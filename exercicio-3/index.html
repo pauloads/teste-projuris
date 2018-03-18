@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projuris</title>
+</head>
+
+<body>
+
+    <div>
+        <ul regiao="Norte">
+            <li data-animal="Condor Negro">Ameaçado de Extinção</li>
+            <li data-animal="Sapo Cururu">Abundante</li>
+        </ul>
+        <ul regiao="Sul">
+            <li data-animal="Mamute">Extinto</li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script>
+        situacaoAnimal('Norte', 'Condor Negro');
+
+        function situacaoAnimal(regiao, animal) {
+            $('ul[regiao=' + regiao + '] li').each(function () {
+                if ($(this).attr('data-animal') === animal) {
+                    console.log($(this).text());
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

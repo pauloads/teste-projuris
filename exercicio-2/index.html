@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teste Projuris</title>
+</head>
+
+<body>
+    <div id="1">Div 1
+        <div id="2">Div 2</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        adicionaDiv();
+        
+        function adicionaDiv() {
+            $('div').each(function(){
+                var novaDiv = document.createElement("div");
+                decorarDiv(novaDiv);
+                $(this).append(novaDiv);
+            })
+        }
+        function decorarDiv(div) {
+            div.textContent = 'Nova Div';
+        }
+    </script>
+</body>
+
+</html>

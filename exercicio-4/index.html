@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Projuris</title>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h2 class="page-title">
+                Adicionar Pessoa
+                <small>
+                    <button type="button" class="btn btn-danger pull-right">Cancelar Cadastro</button>
+                </small>
+            </h2>
+
+        </div>
+
+        <form>
+            <div class="page-content">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="form-group">
+                            <label for="tipo">Tipo</label>
+                            <span class="required"></span>
+                            <select class="form-control" id="tipo" required>
+                                <option>Pessoa Física</option>
+                                <option>Pessoa Jurídica</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="form-group">
+                            <label for="tratamento">Tratamento</label>
+                            <input type="text" id="tratamento" class="form-control" placeholder="Tratamento">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <span class="required"></span>
+                            <input type="text" id="nome" class="form-control" placeholder="Informe o nome completo" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="form-group">
+                            <label for="genero">Gênero</label>
+                            <select class="form-control" id="genero">
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="form-group">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" class="form-control cpf" placeholder="000.000.000-00">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                        <div class="form-group">
+                            <label for="rg">RG</label>
+                            <input type="text" id="rg" class="form-control rg" placeholder="Informe o RG">
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                        <div class="form-group">
+                            <label for="nascimento">Nascimento</label>
+                            <div class="input-group">
+                                <input type="text" id="nascimento" class="form-control nascimento" placeholder="Informe a data">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                        <div class="form-group">
+                            <label for="isAdvogado">advogado</label>
+                            <span class="required"></span>
+                            <select class="form-control" id="isAdvogado">
+                                <option>Não</option>
+                                <option>Sim</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="empty-space"></div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="qualificacao">Qualificação</label>
+                            <input type="text" id="qualificacao" class="form-control" placeholder="Insira mais informações sobre a pessoa">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="palavrasChave">Palavras-Chave</label>
+                            <input type="text" id="palavrasChave" class="form-control" placeholder="Informe as palavras-chave desejadas">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="empty-space"></div>
+
+                <!--email-->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <label>E-Mail</label>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                <div class="form-group">
+                                    <select class="form-control" id="tipoEmail">
+                                        <option>Pessoal</option>
+                                        <option>Comercial</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" id="email" class="form-control" placeholder="Informe o endereço e-mail">
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+                                <div class="form-group">
+                                    <button class="btn btn-default btn-xs btn-circle" type="submit" style="margin-top: 5px;">
+                                        <span class="glyphicon glyphicon-plus" />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                <div class="form-group">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio"> PRINCIPAL
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim email -->
+
+                <div class="empty-space"></div>
+
+                <!-- telefone -->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <label>Telefone</label>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option selected>Pessoal</option>
+                                        <option>Comercial</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control telefone" placeholder="Informe o telefone">
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+                                <div class="form-group">
+                                    <button class="btn btn-default btn-xs btn-circle" type="submit" style="margin-top: 5px;">
+                                        <span class="glyphicon glyphicon-trash" />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                <div class="form-group">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" checked> PRINCIPAL
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Pessoal</option>
+                                        <option selected>Comercial</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control telefone" placeholder="Informe o telefone">
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+                                <div class="form-group">
+                                    <button class="btn btn-default btn-xs btn-circle" type="submit" style="margin-top: 5px;">
+                                        <span class="glyphicon glyphicon-plus" />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                <div class="form-group">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio"> PRINCIPAL
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim telefone -->
+
+                <div class="empty-space"></div>
+
+                <!-- endereço -->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <label>Endereço</label>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Pessoal</option>
+                                        <option>Comercial</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Informe o endereço completo">
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+                                <div class="form-group">
+                                    <button class="btn btn-default btn-xs btn-circle" type="submit" style="margin-top: 5px;">
+                                        <span class="glyphicon glyphicon-plus" />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                <div class="form-group">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio"> PRINCIPAL
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim endereço -->
+
+                <div class="empty-space"></div>
+
+                <button type="button" class="btn btn-link">
+                    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> Ocultar campos
+                </button>
+
+                <div class="empty-space"></div>
+                <div class="empty-space"></div>
+
+                <div class="page-footer">
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <button type="button" class="btn btn-primary">Salvar</button>
+                            <button type="button" class="btn btn-default">Cancelar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="empty-space"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.cpf').mask('000.000.000-00', { reverse: true });
+            $('.telefone').mask('(00) 0000-0000');
+            $('.rg').mask('00.000.000-0');
+            $('.nascimento').mask('00/00/0000');
+        });
+    </script>
+</body>
+
+</html>
